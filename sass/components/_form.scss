@@ -1,0 +1,23 @@
+.form {
+  &__group:not(:last-child) {
+  }
+
+  &__input {
+    &:focus {
+    }
+
+    &:focus:invalid {
+    }
+  }
+
+  &__label {
+  }
+
+  // sibling selector "+" for adjacent to each other
+  // "~" for cross adjacent  (select the object after)
+  //   input
+  //   div
+  //   label
+  &__input:placeholder-shown + &__label {
+  }
+}

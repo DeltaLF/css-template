@@ -1,0 +1,26 @@
+.popup {
+  &__content {
+    @include absCenter;
+  }
+
+  &__left {
+  }
+
+  &__right {
+  }
+  &__img {
+  }
+  &__text {
+  }
+
+  &:target {
+  }
+  &:target &__content {
+  }
+
+  &__close {
+  }
+
+  &:hover {
+  }
+}
