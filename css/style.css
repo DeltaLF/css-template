@@ -1,3 +1,21 @@
+/*
+0   - 600px:  Phone
+600 - 900px:Tabket portrait
+900 - 1200px: tabket landscape
+[1200 - 1800px]: is where our normal styles apply
+1800px +: Big desktop 
+*/
+/*
+$break point argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ ORDER: Base + typography < general layout + grid > page layout > components
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -8,6 +26,15 @@
 html {
   /* default: 16 and we want 10px */
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
@@ -49,6 +76,10 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+  @media only screen and (max-width: 56.25em) {
+    .section-about {
+      padding: 20rem 0;
+      background-color: #ff7730; } }
 
 .composition {
   position: relative; }
